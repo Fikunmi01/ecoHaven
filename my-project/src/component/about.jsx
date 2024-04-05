@@ -3,8 +3,8 @@ import React from "react";
 export const About = () => {
   return (
     <>
-      <div className="mb-5 relative top-96 px-20 py-10 flex flex-row gap-16">
-        <div className="w-1/2">
+      <div className="md:mb-5 relative top-72 py-2 md:top-96 md:px-20 md:py-10 flex flex-col md:flex-row gap-16">
+        <div className="md:w-1/2  px-4">
           <div className="flex mb-4 flex-row items-center gap-5">
             <img src="./assets/line.png" alt="" />
             <p className="font-sans font-semibold text-sm text-[#27563A]">
@@ -12,7 +12,7 @@ export const About = () => {
             </p>
           </div>
 
-          <h2 className="font-sans mb-4 font-bold text-[#08110C] text-3xl">
+          <h2 className="font-sans mb-2 md:mb-4 font-bold text-[#08110C] text-2xl md:text-3xl">
             Discover Sustainable Luxury Living with EcoHaven Realty.
           </h2>
 
@@ -30,7 +30,12 @@ export const About = () => {
         </div>
 
         <div>
-          <img src="./assets/flexImg.png" alt="" />
+          <img src="./assets/flexImg.png" className="hidden md:flex" alt="" />
+          <img
+            src="./assets/flexMobile.png"
+            className="md:hidden mb-10"
+            alt=""
+          />
         </div>
       </div>
     </>

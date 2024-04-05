@@ -3,12 +3,8 @@ import React from "react";
 export const Mission = () => {
   return (
     <>
-      <div className="relative mb-5 top-96 px-20 py-10 flex flex-row gap-16">
-        <div>
-          <img src="./assets/flexImg2.png" alt="" />
-        </div>
-
-        <div className="w-1/2">
+      <div className="relative md:mb-5 top-72 md:top-96 md:px-20 md:py-10 flex flex-col md:flex-row-reverse md:gap-16">
+        <div className="md:w-1/2 px-4">
           <div className="flex mb-4 flex-row items-center gap-5">
             <img src="./assets/line.png" alt="" />
             <p className="font-sans font-semibold text-sm text-[#27563A]">
@@ -16,7 +12,7 @@ export const Mission = () => {
             </p>
           </div>
 
-          <h2 className="font-sans mb-4 font-bold text-[#08110C] text-3xl">
+          <h2 className="font-sans mb-4 font-bold text-[#08110C] text-2xl md:text-3xl">
             Build a Better Future with Eco-Friendly Homes
           </h2>
 
@@ -26,9 +22,14 @@ export const Mission = () => {
             providing a comfortable and luxurious lifestyle.
           </p>
 
-          <button className="flex text-sm flex-row bg-[#27563A] gap-2 px-4 py-2 text-white rounded-full items-center">
+          <button className="flex text-sm flex-row bg-[#27563A] gap-2 px-4 py-2 text-white rounded-full items-center mb-10 md:mb-0">
             Learn More <img src="./assets/arrowLink.png" alt="" />
           </button>
+        </div>
+
+        <div>
+          <img src="./assets/flexImg2.png" className="hidden md:flex" alt="" />
+          <img src="./assets/flexMobile2.png" className="md:hidden mb-10 md:mb-0" alt="" />
         </div>
       </div>
     </>

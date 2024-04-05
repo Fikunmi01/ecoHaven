@@ -89,22 +89,22 @@ export const Listing = () => {
 
   return (
     <>
-      <div className="top-96 relative px-20 py-10 font-sans bg-[#fff]">
-        <h1 className="font-bold text-3xl text-[#08110C] mb-4">
+      <div className=" top-72 px-4 py-2 md:top-96 relative md:px-20 md:py-10 font-sans bg-[#fff]">
+        <h1 className="font-bold text-2xl md:text-3xl text-[#08110C] mb-4">
           Explore Eco-friendly Homes Near You.
         </h1>
 
-        <div className="flex border-b-2 flex-row text-base font-semibold gap-5 border-[#ccc] pb-8 text-[#27563A]  ">
+        <div className=" flex text-sm border-b-2 md:flex-row md:text-base font-semibold overflow-x-scroll md:overflow-hidden scroll scrollbar-hide gap-6 md:gap-5 border-[#ccc] md:pb-8 text-[#27563A] ">
           <p
-            className={`border-b-2 cursor-pointer ${
-              activeTab === "new" ? "border-[#27563A] pb-1" : "border-none"
+            className={`border-b-2 cursor-pointer flex-none ${
+              activeTab === "new" ? "border-[#27563A]  pb-1" : "border-none"
             }`}
             onClick={() => handleTabChange("new")}
           >
             New to market
           </p>
           <p
-            className={`border-b-2 cursor-pointer ${
+            className={`border-b-2 cursor-pointer md:w-fit flex-none ${
               activeTab === "nearby" ? "border-[#27563A] pb-1" : "border-none"
             }`}
             onClick={() => handleTabChange("nearby")}
@@ -113,7 +113,7 @@ export const Listing = () => {
           </p>
 
           <p
-            className={`border-b-2 cursor-pointer ${
+            className={`border-b-2 cursor-pointer flex-none md:w-fit  ${
               activeTab === "mostViewed" ? "border-[#27563A] pb-1" : "border-none"
             }`}
             onClick={() => handleTabChange("mostViewed")}
@@ -122,7 +122,7 @@ export const Listing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-x-10 gap-y-2">
+        <div className="md:grid md:grid-cols-3 md:gap-x-10 gap-y-2">
           {activeTab === "new" &&
             saleArray.map((item, id) => {
               return (
@@ -262,7 +262,7 @@ export const Listing = () => {
             })}
         </div>
 
-        <div className="relative top-6 mb-5 text-center">
+        <div className="relative top-6 mb-20 md:mb-5 text-center">
           <p className="bg-[#27563A] flex items-center gap-3 w-40 py-2 text-white rounded-full m-auto justify-center px-4">
             Browse Now <img src="./assets/arrowLink.png" />
           </p>

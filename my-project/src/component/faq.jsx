@@ -1,10 +1,11 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 export const FAQ = () => {
   const faqArray = [
     {
       id: 1,
-      title: "What makes EcoHaven Realty different from other real estate agencies?",
+      title:
+        "What makes EcoHaven Realty different from other real estate agencies?",
       description:
         "At EcoHaven Realty, we are committed to promoting sustainability in the real estate industry. We prioritize eco-friendly practices, such as green building techniques and energy-efficient systems, in all of our transactions. We believe that promoting environmental responsibility is not only the right thing to do, but it also benefits our clients by providing long-term cost savings and a healthier living environment.",
     },
@@ -80,8 +81,8 @@ export const FAQ = () => {
           <div className="w-2/3">
             {faqArray.map((item) => {
               return (
-                <>
-                  <div key={item.id}>
+                <div key={item.id}>
+                  <div>
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-base font-semibold">{item.title}</h3>
                       <img
@@ -104,7 +105,7 @@ export const FAQ = () => {
                       ) : null}
                     </div>
                   </div>
-                </>
+                </div>
               );
             })}
           </div>

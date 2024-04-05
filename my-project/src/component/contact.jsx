@@ -132,8 +132,8 @@ export const Contact = () => {
         <div className="pt-2">
           {socialArray.map((item) => {
             return (
-              <>
-                <div key={item.id} className="flex items-center gap-4 mb-4">
+              <div key={item.id}>
+                <div className="flex items-center gap-4 mb-4">
                   <img src={item.icon} alt="" />
                   <div>
                     <h4 className="font-bold text-[#08110C] text-xl">
@@ -144,7 +144,7 @@ export const Contact = () => {
                     </p>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>

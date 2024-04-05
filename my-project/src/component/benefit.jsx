@@ -25,17 +25,17 @@ export const Benefit = () => {
     },
   ];
   return (
-    <div className="top-96 relative px-20 py-10 bg-[#E4E5DF]">
-      <div className="flex items-center justify-center py-3 flex-col gap-y-2 relative mb-5">
-        <h1 className="font-bold text-4xl w-2/4 text-center  text-[#08110C]">
+    <div className="md:top-96 top-72 relative md:px-20 md:py-10 bg-[#E4E5DF]">
+      <div className="flex items-center justify-center pt-10 py-3 flex-col gap-y-2 relative mb-5">
+        <h1 className="font-bold text-2xl md:text-4xl md:w-2/4 text-center  text-[#08110C]">
           Benefit of owning an eco-friendly home.
         </h1>
-        <p className="text-[#141413] text-base font-medium">
+        <p className="text-[#141413] text-sm md:text-base font-medium">
           High-quality homes with low-carbon impact.
         </p>
       </div>
 
-      <div className="grid gap-x-4 grid-cols-3">
+      <div className="md:grid md:gap-x-4 md:grid-cols-3 px-4 md:px-0">
         {perks.map((item, id) => {
           return (
             <div key={item.id}>
