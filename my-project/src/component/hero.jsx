@@ -43,7 +43,7 @@ export const HeroSection = () => {
               />
             </div>
 
-            <div className="flex items-center px-6 py-2 bg-[#27563A] rounded-r-full border-2 border-[#27563A] border-solid">
+            <div className="flex items-center md:px-6 md:py-2 px-3 py-1 bg-[#27563A] rounded-r-full border-2 border-[#27563A] border-solid">
               <img src="./assets/searchIcon.png" alt="search icon" />
             </div>
           </div>

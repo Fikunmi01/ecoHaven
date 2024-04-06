@@ -58,27 +58,37 @@ export const Review = () => {
 
   return (
     <>
-      <div className="md:top-96 top-72 relative md:px-20 md:py-10 bg-[#FFF]">
+      <div className="md:top-96 top-72 relative mt-10 md:mt-0 md:px-20 md:py-10 bg-[#FFF]">
         <div className="flex items-center justify-center py-3 flex-col gap-y-2 relative mb-5">
-          <h1 className="font-bold md:text-4xl md:w-2/4 text-center  text-[#08110C]">
+          <h1 className="font-bold text-2xl md:text-4xl md:w-2/4 text-center text-[#08110C]">
             What our customers say?
           </h1>
-          <p className="text-[#141413] text-base font-medium">
+          <p className="text-[#141413] text-sm md:text-base font-medium">
             Hear from our satisfied customers and clients.
           </p>
         </div>
 
         <Swiper
-          slidesPerView={2.5}
+          // slidesPerView={2.5}
           spaceBetween={20}
           navigation={false}
           pagination={{ clickable: false }}
-          className="py-10"
+          className="py-10 mx-4 md:mx-0"
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 1.5,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2.5,
+            },
+          }}
         >
           {carouselItem.map((item, index) => (
-            <SwiperSlide key={index} className="relative ">
-              <div className=" relative border-[#E5E5E5] rounded-lg border-2 h-60 px-8 pt-14">
-                <div className="bottom-48 absolute  ">
+            <SwiperSlide key={index} className="flex-col flex relative">
+              <div className=" relative flex flex-col border-[#E5E5E5] rounded-lg border-2 h-72 md:h-60 px-8 pt-14">
+                <div className="bottom-60 md:bottom-48 absolute ">
                   <img src="./assets/quoteIcon.png" alt="" />
                 </div>
                 <h2 className="text- text-xl font-semibold">{item.name}</h2>

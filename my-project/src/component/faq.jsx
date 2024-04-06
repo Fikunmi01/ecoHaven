@@ -53,8 +53,8 @@ export const FAQ = () => {
   };
   return (
     <>
-      <div className="mb-5 relative top-96 px-20 py-10 gap-16">
-        <div className="w-1/2">
+      <div className="mb-5 relative top-72 md:top-96 px-4 md:px-20 md:py-10 md:gap-16">
+        <div className="md:w-1/2">
           <div className="flex mb-4 flex-row items-center gap-5">
             <img src="./assets/line.png" alt="" />
             <p className="font-sans font-semibold text-sm text-[#27563A]">
@@ -63,9 +63,9 @@ export const FAQ = () => {
           </div>
         </div>
 
-        <div className="flex ">
+        <div className="md:flex ">
           <div className="">
-            <h1 className="text-[#08110C] w-4/5 text-3xl font-bold mb-4">
+            <h1 className="text-[#08110C] md:w-4/5 text-2xl md:text-3xl font-bold mb-4">
               Common questions asked about our eco-friendly homes.
             </h1>
             <p className="w-4/5 text-base text-[#313131] font-medium mb-4">
@@ -73,17 +73,17 @@ export const FAQ = () => {
               the answers to the questions.
             </p>
             <p className="font-bold text-xl mb-4">Have a different question?</p>
-            <button className="bg-[#27563A] flex text-white items-center gap-2 px-4 py-2 rounded-full">
+            <button className="bg-[#27563A] flex text-white items-center gap-2 px-4 py-2 rounded-full mb-5 md:mb-0">
               Contact Us <img src="./assets/arrowLink.png" alt="" />
             </button>
           </div>
 
-          <div className="w-2/3">
+          <div className="md:w-2/3">
             {faqArray.map((item) => {
               return (
                 <div key={item.id}>
                   <div>
-                    <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center justify-between mb-4  border-t-2 border-solid border-[#E5E5E5] pt-3 md:pt-0 md:border-none">
                       <h3 className="text-base font-semibold">{item.title}</h3>
                       <img
                         src="./assets/arrowDown.png"

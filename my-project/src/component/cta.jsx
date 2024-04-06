@@ -3,12 +3,19 @@ import React from "react";
 export const CTA = () => {
   return (
     <>
-      <div className="px-20 py-16 bg-white relative top-96">
+      <div className="md:px-20 md:py-16 bg-white relative top-72 md:top-96">
         <div className="relative bg-white">
-          <img className="relative" src="./assets/CTAScreen.png" alt="" />
+          <img
+            className="hidden md:flex relative"
+            src="./assets/CTAScreen.png"
+            alt=""
+          />
+          <img src="./assets/CTAMobile.png" className="md:hidden" alt="" />
 
-          <div className="absolute top-1/4 px-16 py-10 rounded-2xl bg-white left-1/4 text-center mx-auto">
-            <h1 className="text-[#08110C] font-bold text-3xl w-3/4 mb-4 m-auto">Ready to find your eco-friendly home?</h1>
+          <div className="absolute top-1/4 mx-4 py-6 md:px-16 md:py-10 rounded-2xl bg-white md:left-1/4 text-center md:mx-auto">
+            <h1 className="text-[#08110C] font-bold text-2xl md:text-3xl md:w-3/4 mb-4 m-auto">
+              Ready to find your eco-friendly home?
+            </h1>
             <p className="text-[#313131] font-medium text-base mb-4">
               We have homes in 20+ cities across the country to choose from!
             </p>

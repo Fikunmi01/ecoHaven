@@ -28,10 +28,10 @@ export const Contact = () => {
     },
   ];
   return (
-    <div className="relative top-96 px-20 py-16 bg-[#E4E5DF] gap-10 flex">
-      <div className="w-2/3 bg-white px-10 rounded-2xl py-10">
-        <div className="flex w-full relative gap-4">
-          <div className="mb-4 w-full flex-col flex">
+    <div className="relative top-72 px-4 py-8 md:top-96 md:px-20 md:py-16 bg-[#E4E5DF] md:gap-10 flex flex-col md:flex-row">
+      <div className="md:w-2/3 bg-white px-5 py-5 md:px-10 rounded-2xl md:py-10">
+        <div className="flex w-full relative md:gap-4 flex-col md:flex-row">
+          <div className=" mb-4 w-full flex-col flex">
             <label
               className="font-semibold text-sm text-[#313131] mb-2"
               htmlFor="full name"
@@ -47,7 +47,7 @@ export const Contact = () => {
             />
           </div>
 
-          <div className="w-full flex-col flex">
+          <div className="w-full flex-col flex mb-4 md:mb-0">
             <label
               className="font-semibold text-sm text-[#313131] mb-2"
               htmlFor="phone number"
@@ -120,8 +120,8 @@ export const Contact = () => {
         </button>
       </div>
 
-      <div className="mt-2">
-        <h1 className="font-bold mb-4 text-3xl">
+      <div className="mt-10 md:mt-2">
+        <h1 className="font-bold mb-4 text-2xl md:text-3xl">
           Get in touch to schedule a visit to your new house.
         </h1>
         <p className="text-base font-medium pb-4 border-[#CBCBCB] border-b-2">
