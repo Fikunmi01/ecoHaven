@@ -3,7 +3,7 @@ import React from "react";
 export const About = () => {
   return (
     <>
-      <div className="md:mb-5 relative top-40 py-2 md:top-96 md:px-20 md:py-10 flex flex-col md:flex-row gap-16">
+      <div className="md:mb-5 relative top-52 py-2 md:top-96 md:px-20 md:py-10 flex flex-col md:flex-row gap-16">
         <div className="md:w-1/2  px-4">
           <div className="flex mb-4 flex-row items-center gap-5">
             <img src="./assets/line.png" alt="" />
