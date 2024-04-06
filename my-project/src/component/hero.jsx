@@ -26,7 +26,7 @@ export const HeroSection = () => {
             Agency
           </p>
 
-          <div className="flex flex-row relative ">
+          <div className="flex flex-row relative mx-4 md:mx-0">
             <select
               defaultValue="For Sale"
               className="flex items-center  bg-[#E5E5E5] text-[#313131] px-2 md:px-4 py-2 rounded-l-full outline-none text-base"
@@ -44,7 +44,7 @@ export const HeroSection = () => {
             </div>
 
             <div className="flex items-center px-6 py-2 bg-[#27563A] rounded-r-full border-2 border-[#27563A] border-solid">
-              <img src="./assets/searchIcon.png" alt="search icon" />
+              <img src="./assets/searchIcon.png" className="w-6 h-6" alt="search icon" />
             </div>
           </div>
         </div>
