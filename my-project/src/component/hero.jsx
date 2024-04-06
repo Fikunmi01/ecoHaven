@@ -15,7 +15,7 @@ export const HeroSection = () => {
   return (
     <>
       <div className="relative">
-        <img className="h-screen absolute" src="./assets/Hero.png" />
+        <img className="h-[100vh] md:h-screen absolute" src="./assets/Hero.png" />
 
         <Navbar />
         <div className="relative  flex flex-col items-center text-white top-20">

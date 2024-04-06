@@ -58,9 +58,9 @@ export const Review = () => {
 
   return (
     <>
-      <div className="top-96 relative px-20 py-10 bg-[#FFF]">
+      <div className="md:top-96 top-72 relative md:px-20 md:py-10 bg-[#FFF]">
         <div className="flex items-center justify-center py-3 flex-col gap-y-2 relative mb-5">
-          <h1 className="font-bold text-4xl w-2/4 text-center  text-[#08110C]">
+          <h1 className="font-bold md:text-4xl md:w-2/4 text-center  text-[#08110C]">
             What our customers say?
           </h1>
           <p className="text-[#141413] text-base font-medium">
