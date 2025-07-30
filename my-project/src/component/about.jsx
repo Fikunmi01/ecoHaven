@@ -5,7 +5,7 @@ export const About = () => {
     <>
       <div className="md:mb-5 relative top-72 py-2 md:top-96 md:px-20 md:py-10 flex flex-col md:flex-row gap-16">
         <div className="md:w-1/2  px-4">
-          <div className="flex mb-4 flex-row items-center gap-5">
+          <div className="flex mb-4 flex-row  items-center gap-5">
             <img src="./assets/line.png" alt="" />
             <p className="font-sans font-semibold text-sm text-[#27563A]">
               WHO WE ARE
@@ -29,7 +29,7 @@ export const About = () => {
           </button>
         </div>
 
-        <div>
+        <div className="px-4 md:px-0 flex items-center justify-center">
           <img src="./assets/flexImg.png" className="hidden md:flex" alt="" />
           <img
             src="./assets/flexMobile.png"

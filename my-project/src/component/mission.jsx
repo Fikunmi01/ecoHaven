@@ -27,7 +27,7 @@ export const Mission = () => {
           </button>
         </div>
 
-        <div>
+        <div className="flex justify-center">
           <img src="./assets/flexImg2.png" className="hidden md:flex" alt="" />
           <img src="./assets/flexMobile2.png" className="md:hidden mb-10 md:mb-0" alt="" />
         </div>
